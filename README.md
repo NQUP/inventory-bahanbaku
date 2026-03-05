@@ -124,4 +124,4 @@ http://127.0.0.1:8000
 
 ## License
 
-Project ini menggunakan **MIT License**.
+**MIT License**.
