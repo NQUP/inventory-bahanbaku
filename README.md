@@ -1,71 +1,126 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistem Inventory Bahan Baku
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem Inventory Bahan Baku merupakan aplikasi berbasis web yang dikembangkan untuk membantu proses pengelolaan persediaan bahan baku secara terkomputerisasi. Sistem ini memungkinkan pengguna untuk mencatat barang masuk, barang keluar, melakukan pemesanan bahan baku, serta memantau ketersediaan stok secara lebih efektif dan efisien.
 
-## About Laravel
+Aplikasi ini dibuat sebagai bagian dari **tugas skripsi** dalam pengembangan sistem informasi berbasis web.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Fitur Sistem
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* Manajemen data bahan baku
+* Pencatatan barang masuk
+* Pencatatan barang keluar
+* Monitoring stok bahan baku
+* Sistem pemesanan bahan baku
+* Laporan inventory
+* Manajemen pengguna
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Role Pengguna
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Sistem ini memiliki **5 role pengguna**, yaitu:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Admin
 
-## Laravel Sponsors
+* Mengelola data user
+* Mengelola data bahan baku
+* Mengelola seluruh aktivitas sistem
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Manager
 
-### Premium Partners
+* Melihat laporan inventory
+* Monitoring stok bahan baku
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Gudang
 
-## Contributing
+* Mengelola stok bahan baku
+* Mencatat barang masuk
+* Mencatat barang keluar
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Pemesan
 
-## Code of Conduct
+* Melakukan pemesanan bahan baku
+* Melihat status pemesanan
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Supplier
 
-## Security Vulnerabilities
+* Menerima permintaan pemesanan
+* Mengelola pengiriman bahan baku
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
+
+## Demo Login
+
+Berikut akun yang dapat digunakan untuk mencoba sistem:
+
+| Role     | Email                                           | Password |
+| -------- | ----------------------------------------------- | -------- |
+| Admin    | [admin@gmail.com](mailto:admin@gmail.com)       | 12345    |
+| Manager  | [manager@gmail.com](mailto:manager@gmail.com)   | 12345    |
+| Gudang   | [gudang@gmail.com](mailto:gudang@gmail.com)     | 12345    |
+| Pemesan  | [pemesan@gmail.com](mailto:pemesan@gmail.com)   | 12345    |
+| Supplier | [supplier@gmail.com](mailto:supplier@gmail.com) | 12345    |
+
+Semua akun menggunakan password yang sama untuk keperluan demonstrasi sistem.
+
+---
+
+## Teknologi yang Digunakan
+
+* PHP
+* Laravel Framework
+* MySQL
+* Bootstrap
+* JavaScript
+
+---
+
+## Instalasi Project
+
+Clone repository
+
+git clone https://github.com/NQUP/inventory-bahanbaku.git
+
+Masuk ke folder project
+
+cd inventory-bahanbaku
+
+Install dependency
+
+composer install
+
+Copy file environment
+
+cp .env.example .env
+
+Generate application key
+
+php artisan key:generate
+
+Konfigurasi database pada file `.env`
+
+Jalankan migration
+
+php artisan migrate
+
+Jalankan aplikasi
+
+php artisan serve
+
+Akses aplikasi melalui browser:
+
+http://127.0.0.1:8000
+
+---
+
+## Author
+
+Rizqi Alfa Reza
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# Iinventory-bahanbaku
-Sistem manajemen inventory bahan baku untuk mencatat stok, masuk, keluar, dan monitoring persediaan bahan baku.
->>>>>>> 6d521799a01baa52d9eaab0aef139d1189cf277f
+Project ini menggunakan **MIT License**.
