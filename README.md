@@ -118,6 +118,7 @@ http://127.0.0.1:8000
 ## Author
 
 Rizqi Alfa Reza
+Email: rizqialfareza07@gmail.com
 
 ---
 
