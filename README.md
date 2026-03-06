@@ -1,4 +1,4 @@
-# Sistem Inventory Bahan Baku
+# Sistem Inventory Bahan Baku Dengan Metode JIT
 
 Sistem Inventory Bahan Baku merupakan aplikasi berbasis web yang dikembangkan untuk membantu proses pengelolaan persediaan bahan baku secara terkomputerisasi. Sistem ini memungkinkan pengguna untuk mencatat barang masuk, barang keluar, melakukan pemesanan bahan baku, serta memantau ketersediaan stok secara lebih efektif dan efisien.
 
